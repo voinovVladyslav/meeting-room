@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Demo</title>
+    </head>
+    <body>
+        <div>
+            <label for="username">Enter username:</label>
+            <input id="username" type="text" />
+            <button id="join-button">Join chat</button>
+        </div>
+
+        <div class="main-grid-container">
+            <div id="video-container">
+                <video id="local-video" src=""></video>
+                <button id="button-toggle-audio">Mute audio</button>
+                <button id="button-toggle-video">Off video</button>
+            </div>
+            <div id="chat-container">
+                <div>
+                    <h3>Chat</h3>
+                    <ul id="message-list">
+                        <li>Message</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="text" />
+                    <button id="button-send-message">Send message</button>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
