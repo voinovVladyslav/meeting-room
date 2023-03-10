@@ -86,6 +86,12 @@ WSGI_APPLICATION = 'meeting_room.wsgi.application'
 ASGI_APPLICATION = 'meeting_room.asgi.application'
 
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+    },
+}
+
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
