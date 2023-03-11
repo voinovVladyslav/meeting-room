@@ -5,30 +5,31 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'css/main.css' %}" />
         <title>Demo</title>
     </head>
     <body>
         <div>
-            <label id="username-label" for="username">Enter username:</label>
+            <h3 id="username-label" for="username">Enter username:</h3>
             <input id="username" type="text" />
             <button id="join-button">Join chat</button>
         </div>
 
         <div class="main-grid-container">
             <div id="video-container">
-                <video id="local-video" src="" autoplay></video>
+                <div>
+                    <video id="local-video" src="" autoplay playsinline></video>
+                </div>
                 <button id="button-toggle-audio">Mute audio</button>
                 <button id="button-toggle-video">Off video</button>
             </div>
             <div id="chat-container">
+                <h3>Chat</h3>
                 <div>
-                    <h3>Chat</h3>
-                    <ul id="message-list">
-                        <li>Message</li>
-                    </ul>
+                    <ul id="message-list"></ul>
                 </div>
                 <div>
-                    <input type="text" />
+                    <input id="message-input" type="text" />
                     <button id="button-send-message">Send message</button>
                 </div>
             </div>
