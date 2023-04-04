@@ -84,8 +84,16 @@ h3#username-label {
 }
 
 video#local-video {
-  width: 640px;
-  height: 480px;
+  width: 240px;
+  height: 100px;
+}
+
+.local-video_videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .username_block {
@@ -96,15 +104,14 @@ video#local-video {
 }
 
 .local-video_block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: block;
+  text-align: center;
 }
 
 .local-video_buttons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 button#button-toggle-audio {

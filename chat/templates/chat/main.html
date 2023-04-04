@@ -23,7 +23,7 @@
           <button id="join-button">Join chat</button>
         </div>
         <div class="local-video_block">
-          <video id="local-video" src="" autoplay playsinline></video>
+          <div class="local-video_videos"></div>
           <div class="local-video_buttons">
             <button id="button-toggle-audio">
               <img src="{% static 'img/mic.svg' %}" alt="mic" />
@@ -33,6 +33,7 @@
             </button>
           </div>
         </div>
+        <video id="local-video" src="" autoplay playsinline></video>
       </div>
       <div id="chat-container">
         <h3 class="chat-title">Chat</h3>

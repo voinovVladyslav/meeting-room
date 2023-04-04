@@ -294,13 +294,14 @@ function dcOnMessage(event) {
 }
 
 function createVideo(peerUsername) {
-  let videoContainer = document.querySelector("#video-container");
+  let videoContainer = document.querySelector(".local-video_videos");
 
   let remoteVideo = document.createElement("video");
 
   remoteVideo.id = peerUsername + "-video";
   remoteVideo.autoplay = true;
   remoteVideo.playsInline = true;
+  remoteVideo.style.width = "300px";
 
   let videoWrapper = document.createElement("div");
 
